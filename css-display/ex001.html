@@ -1,0 +1,48 @@
+<!--criar um arquivo HTML básico com três elementos <div>. Em seguida, instrua-os a 
+    aplicar a propriedade display com os valores inline, block e inline-block para 
+    cada um dos elementos e observar as diferenças em como os elementos são 
+    renderizados na página.-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            border: 1px solid #000;
+        }
+
+        .inline-box {
+            display: inline;
+        }
+
+        .block-box {
+            display: block;
+        }
+
+        .inline-block-box {
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="box inline-box">
+        Inline
+    </div>
+    <div class="box inline-block-box">
+        Inline-Block
+    </div>
+    <div class="box block-box">
+        Block
+    </div>
+    <div class="box inline-block-box">
+        Inline-Block
+    </div>
+    <div class="box inline-block-box">
+        Inline-Block
+    </div>
+    
+</body>
+</html>

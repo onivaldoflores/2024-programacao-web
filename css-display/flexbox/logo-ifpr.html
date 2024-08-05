@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        section{
+            margin: auto;
+            margin-bottom: 25px;
+            padding: 20px;
+            background-color: #d2d2d2;
+            
+        }
+        section > div{
+
+            padding: 10px;
+            margin: auto;
+            text-align: center;
+        }
+
+        h1,
+        h2 {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0px;
+        }
+
+        h1 {
+            font-weight: bolder;
+            font-size: 14px;
+        }
+
+        h2{
+            font-size: 11px;
+        }
+
+        h2{
+            font-weight: 600;
+        }
+
+        .container-flex {
+            display: flex;
+            padding: 5px;
+            border: 1px solid #333;
+            border-radius: 5px;
+            background-color: white;
+            justify-content: center;
+            width: 300px;
+            margin: auto;
+        }
+
+        .logo-flex {
+            display: flex;
+            flex-wrap: wrap;
+            width: 39px;
+
+        }
+
+        .escrita-flex {
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            padding-bottom: 5px;
+            margin-left: 5px;
+            text-align: left;
+        }
+
+        .escrita-flex h1,h2{
+            margin-bottom: -4px;
+        }
+
+        .box {
+            width: 12px;
+            height: 12px;
+            margin: 0px 1px 1px 0px;
+            border-radius: 2px;
+        }
+
+        .circle {
+            width: 12px;
+            height: 12px;
+            margin: 0px 1px 1px 0px;
+            border-radius: 10px;
+        }
+
+        .red {
+            background-color: #C90C0F;
+        }
+
+        .white {
+            background-color: white;
+        }
+
+        .green {
+            background-color: #359830;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div>
+            <h1>ESTRUTURA EM FLEX BOX</h1>
+            <div class="container-flex">
+                <div class="logo-flex">
+                    <div class="circle red"></div>
+                    <div class="box green"></div>
+                    <div class="box green"></div>
+                    <div class="box green"></div>
+                    <div class="box green"></div>
+                    <div class="box white"></div>
+                    <div class="box green"></div>
+                    <div class="box green"></div>
+                    <div class="box green"></div>
+                    <div class="box green"></div>
+                    <div class="box green"></div>
+                    <div class="box white"></div>
+                </div>
+                <div class="escrita-flex">
+                    <h1>INSTITUTO FEDERAL</h1>
+                    <h2>Paraná</h2>
+                    <h2>Campus Ivaiporã</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

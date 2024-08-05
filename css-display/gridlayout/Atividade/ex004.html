@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    .blog-layout {
+      display: grid;
+      grid-template-areas:
+        "header header"
+        "sidebar main-content"
+        "footer footer";
+      grid-template-columns: 1fr 2fr;
+      grid-template-rows: auto 1fr auto;
+      min-height: 100vh;
+    }
+
+    header {
+      grid-area: header;
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .main-content {
+      grid-area: main-content;
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .sidebar {
+      grid-area: sidebar;
+      background-color: #f9f9f9;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+      grid-area: footer;
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<div class="blog-layout">
+  <header>
+    <h1>LogoMarca</h1>
+  </header>
+
+  <div class="sidebar">
+    <h2>Barra Lateral</h2>
+    <ul>
+      <li>Categoria 1</li>
+      <li>Categoria 2</li>
+      <li>Categoria 3</li>
+      <!-- Adicione mais itens de barra lateral conforme necessário -->
+    </ul>
+  </div>
+
+  <div class="main-content">
+    <h1>Post Título</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac convallis quam. Nulla facilisi...</p>
+    <!-- Adicione mais conteúdo conforme necessário -->
+  </div>
+
+  <footer>
+    <p>&copy; 2023 Blog Name. Todos os direitos reservados.</p>
+  </footer>
+</div>
+
+</body>
+</html>
