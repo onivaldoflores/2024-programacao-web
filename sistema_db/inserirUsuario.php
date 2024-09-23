@@ -10,6 +10,9 @@
     $login = $_POST["login"];
     $senha = $_POST["senha"];
 
+    $sql = "INSERT INTO usuario (nome, email, idade, fone, cpf, rg, login, senha) VALUES ('$nome', '$email', '$idade','$fone','$cpf','$rg','$login','$senha')";
+
+    mysqli_query($conn, $sql);
 
 
 
