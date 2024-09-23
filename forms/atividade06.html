@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <style>
+        #formulario{
+            margin: auto;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div id="formulario">
+        <h1>Cadastro de Usuário</h1>
+        <form action="" method="post">
+            <!-- Campo de Nome -->
+            <label for="name">Nome: *</label>
+            <input type="text" id="name" name="name" required placeholder="Digite seu nome" title="* Campo obrigatório"><br><br>
+
+            <!-- Campo de E-mail -->
+            <label for="email">E-mail: *</label>
+            <input type="email" id="email" name="email" required placeholder="Digite seu e-mail" ><br><br>
+
+            <!-- Campo de Senha -->
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required placeholder="Digite sua senha" minlength="8" title="* Sua senha deve ter no mínimo 8 caracteres"><br><br>
+
+            <!-- Campo de Gênero -->
+            <fieldset>
+                <legend>Gênero:</legend>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Masculino</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Feminino</label><br>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Outro</label>
+            </fieldset><br>
+
+            <!-- Campo de Hobbies -->
+            <fieldset>
+                <legend>Hobbies:</legend>
+                <input type="checkbox" id="reading" name="hobbies" value="reading">
+                <label for="reading">Leitura</label><br>
+                <input type="checkbox" id="traveling" name="hobbies" value="traveling">
+                <label for="traveling">Viagens</label><br>
+                <input type="checkbox" id="sports" name="hobbies" value="sports">
+                <label for="sports">Esportes</label>
+            </fieldset><br>
+
+            <!-- Campo de País -->
+            <label for="country">País:</label>
+            <select id="country" name="country" required>
+                <option value="" disabled selected>Selecione seu país</option>
+                <option value="br">Brasil</option>
+                <option value="us">Estados Unidos</option>
+                <option value="fr">França</option>
+                <option value="jp">Japão</option>
+                <option value="cn">China</option>
+            </select><br><br>
+
+            <!-- Botão de Envio -->
+            <input type="submit" value="Cadastrar">
+        </form>
+    </div>
+</body>
+</html>

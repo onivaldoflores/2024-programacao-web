@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Feedback</title>
+    <style>
+        #formulario{
+            margin: auto;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div id="formulario">
+        <h1>Formulário de Feedback</h1>
+        <form action="/submit-feedback" method="post" enctype="multipart/form-data">
+            <!-- Campo de Nome -->
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required placeholder="Digite seu nome"><br><br>
+            <!-- Campo de E-mail -->
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required placeholder="Digite seu e-mail"><br><br>
+            <!-- Área de Comentário -->
+            <label for="comments">Comentários:</label><br>
+            <textarea id="comments" name="comments" rows="5" cols="40" required placeholder="Digite seus comentários aqui"></textarea><br><br>
+            <!-- Campo de Anexar Arquivo -->
+            <label for="file">Anexar Arquivo:</label>
+            <input type="file" id="file" name="file"><br><br>
+            <!-- Botão de Envio -->
+            <input type="submit" value="Enviar Feedback">
+        </form>
+    </div>
+</body>
+</html>
