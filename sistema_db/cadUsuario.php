@@ -3,8 +3,6 @@
             include_once('menu.php');
         ?>
 
-
-
         <main class="content">
             <h1>Cadastro de Usuários</h1>
             <div class="campo">
@@ -15,6 +13,12 @@
                             echo "<div class='msg-verde'>Usuário cadastrado com sucesso!</div>";
                         }else{
                             echo "<div class='msg-vermelho'>Erro ao cadastrar o usuário!</div>";
+                        }
+                    }
+                    if(isset($_GET["usuarioErro"])){
+                        $usuarioErro = $_GET["usuarioErro"];
+                        if($usuarioErro == "duplicado"){
+                            echo "<div class='msg-vermelho'>Já existe um usuário com o mesmo login e senha cadastrado no sistema.</div>";
                         }
                     }
                 ?>
