@@ -16,13 +16,12 @@
                 </thead>
                 <tbody>
                     <?php
-
                     $sql = "SELECT * FROM usuario";
                     $resultado = mysqli_query($conn, $sql);
 
                     while($x = mysqli_fetch_assoc($resultado)){
                         echo "<tr>";
-                        echo "<td>" . $x["id"] . "</td>";
+                        echo "<td>". $x["id"] ."</td>";
                         echo "<td>" . $x["nome"] . "</td>";
                         echo "<td>
                                 <a href='editarUsuario.php?id=" . $x['id'] . "' class='edit-btn'>Editar</a>
