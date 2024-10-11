@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -9,7 +12,7 @@
 <body>
     <header>
         <div class="session-info">
-            <span>Usuário logado: Fulano</span>
+            <span>Usuário logado: <?php echo $_SESSION["usuario"]; ?></span>
             <a href="logout.php">Logout</a>
         </div>
     </header>

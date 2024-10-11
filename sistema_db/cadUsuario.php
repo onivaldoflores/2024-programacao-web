@@ -30,6 +30,7 @@
 
         include_once('header.php');
         include_once('menu.php');
+        include_once('sessao.php');
         ?>
 
         <main class="content">
