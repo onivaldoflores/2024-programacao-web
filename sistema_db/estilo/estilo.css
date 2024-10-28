@@ -178,3 +178,10 @@ tbody tr:hover {
 .delete-btn:hover {
     background-color: #e53935;
 }
+
+.status_pagInicial{
+    background-color: #45a049;
+    color: white;
+    width: 50%;
+    padding: 10px;
+}

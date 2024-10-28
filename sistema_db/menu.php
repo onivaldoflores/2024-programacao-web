@@ -1,6 +1,6 @@
 <nav class="sidebar">
     <ul>
-        <li><a href="#">Página Inicial</a></li>
+        <li><a href="pagInicial.php">Página Inicial</a></li>
         <li><a href="cadUsuario.php">Cadastro de Usuários</a></li>
         <li><a href="buscaUsuario.php">Buscar Usuários</a></li>
         <li><a href="#">Relatórios</a></li>

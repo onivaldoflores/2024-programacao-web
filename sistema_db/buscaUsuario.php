@@ -27,6 +27,7 @@ include_once('conexao.php');
                 echo "<td>
                                 <a href='editarUsuario.php?id=" . $x['id'] . "' class='edit-btn'>Editar</a>
                                 <a href='excluirUsuario.php?id=" . $x['id'] . "' class='delete-btn'>Excluir</a>
+                                
                               </td>";
                 echo "</tr>";
             }

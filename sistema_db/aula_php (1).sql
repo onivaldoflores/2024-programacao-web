@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Tempo de geração: 23-Set-2024 às 18:20
+-- Tempo de geração: 28-Out-2024 às 17:36
 -- Versão do servidor: 8.0.31
 -- versão do PHP: 8.0.26
 
@@ -35,20 +35,22 @@ CREATE TABLE IF NOT EXISTS `usuario` (
   `nome` varchar(256) COLLATE utf8mb4_unicode_ci NOT NULL,
   `email` varchar(256) COLLATE utf8mb4_unicode_ci NOT NULL,
   `idade` int NOT NULL,
-  `fone` int NOT NULL,
-  `cpf` int NOT NULL,
-  `rg` int NOT NULL,
+  `fone` varchar(256) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `cpf` varchar(256) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `rg` varchar(256) COLLATE utf8mb4_unicode_ci NOT NULL,
   `login` varchar(256) COLLATE utf8mb4_unicode_ci NOT NULL,
   `senha` varchar(256) COLLATE utf8mb4_unicode_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=18 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Extraindo dados da tabela `usuario`
 --
 
 INSERT INTO `usuario` (`id`, `nome`, `email`, `idade`, `fone`, `cpf`, `rg`, `login`, `senha`) VALUES
-(1, 'aaaa', 'bbbb@bbbb', 1111, 0, 2147483647, 2147483647, '444444444', '55555555555');
+(14, 'Onivaldo', 'onivaldoflores@gmail.com', 37, '43984474044', '049.0058.493-32', '9.357.802-3', 'teste', 'teste'),
+(16, 'Evandro Sanches Carvalho', 'usuario@usuario', 25, '43998757211', '123', '123', '123', ''),
+(17, 'Matheus', 'asd@asd.com', 0, '43998409648', '123', '123', 'teste', '');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
